@@ -487,6 +487,11 @@ section .title::after {
 
 /* video section styling */
 
+video {
+  border-radius: 5px;
+  border: 3px solid dodgerblue;
+}
+
 .container-vid {
   margin-top: 50px;
   display: grid;
@@ -494,9 +499,11 @@ section .title::after {
   grid-gap: 5px;
   background-color: #000000;
   padding: 12px;
+  border-radius: 6px;
+  box-shadow: 5px 7px 7px 3px #000000;
 }
 
-.container-vid > div {
+/* .container-vid > div {
   background-color: #8d8d8d;
   display: flex;
   align-items: center;
@@ -504,7 +511,8 @@ section .title::after {
   font-weight: bold;
   padding: 20px;
   border: 3px solid black;
-}
+  border-radius: 6px;
+} */
 
 .top-left {
   grid-column: 1/2;
@@ -512,6 +520,14 @@ section .title::after {
 
 .top-right {
   grid-column: 2/3;
+}
+
+.video .title {
+  font-family: "Carter One", cursive;
+}
+
+.video .title::after {
+  content: "Amor Fati";
 }
 
 /* footer section styling */
